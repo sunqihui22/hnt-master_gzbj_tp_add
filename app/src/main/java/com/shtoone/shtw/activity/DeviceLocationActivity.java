@@ -131,9 +131,6 @@ public class DeviceLocationActivity extends BaseActivity {
         aMap.moveCamera(CameraUpdateFactory.changeLatLng(gaodeLatLng(new LatLng(34.08744, 117.80455))));
         aMap.moveCamera(CameraUpdateFactory.zoomTo(14));
 
-        //绑定信息窗点击事件
-//        aMap.setOnInfoWindowClickListener(listener);
-
         geocoderSearch = new GeocodeSearch(this);
         geocoderSearch.setOnGeocodeSearchListener(searchListener);
         progDialog = new ProgressDialog(this);
@@ -154,22 +151,6 @@ public class DeviceLocationActivity extends BaseActivity {
             } else if (i == -1) {
                 mParametersData.equipmentID = "";
             }
-
-//            if (dataBeen.size() == 1){
-//                regeoMarker = aMap.addMarker(new MarkerOptions().anchor(1.0f, 1.0f)
-//                        .icon(BitmapDescriptorFactory
-//                                .defaultMarker(BitmapDescriptorFactory.HUE_RED))
-//                        .title(dataBeen.get(0).getBanhezhanminchen())
-//                        .snippet(dataBeen.get(0).getDongjinbeiwei()));
-//                regeoMarker.showInfoWindow();
-//            }else {
-//
-//                regeoMarker = aMap.addMarker(new MarkerOptions().anchor(1.0f, 1.0f)
-//                        .icon(BitmapDescriptorFactory
-//                                .defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-//                Log.e("定位数据为空", "onItemSelected: "+ dataBeen.size());
-//            }
-
         }
 
         @Override
