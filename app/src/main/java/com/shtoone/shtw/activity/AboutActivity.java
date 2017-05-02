@@ -28,6 +28,7 @@ public class AboutActivity extends BaseActivity {
         initDate();
     }
 
+    //初始化
     private void initView() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar_toolbar_tablayout);
         mTabLayout = (TabLayout) findViewById(R.id.tablayout_toolbar_tablayout);
