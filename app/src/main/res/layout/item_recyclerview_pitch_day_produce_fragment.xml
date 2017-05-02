@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_recyclerview_dayproduce_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="@dimen/card_Corner_Radius"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:padding="6dp"
+        android:orientation="vertical">
+        <!-- 第1行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">"
+
+            <!-- 日期  -->
+            <TextView
+                android:id="@+id/txtRichanliangDate"
+                android:layout_width="0dp"
+                android:text="日期"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/tv_shebeibianhao"
+                android:text="@string/richanliang_shebeibianhao"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View android:layout_height="8dp"
+            android:layout_width="match_parent"/>
+
+        <!-- 第2行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 盘数  -->
+            <TextView
+                android:id="@+id/tv_dailyps"
+                android:text="@string/richanliang_dailyps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <!-- 每日产量  -->
+            <TextView
+                android:id="@+id/tv_dailycl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/richanliang_dailycl" />
+
+        </LinearLayout>
+
+        <!--&lt;!&ndash; 第3行 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--&lt;!&ndash; 修正产量  &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtRichanliangXiuzhengchanliang"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:text="@string/richanliang_xiuzhengchanliang" />-->
+
+
+            <!--&lt;!&ndash; 密度  &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtRichanliangMidu"-->
+
+                <!--android:text="@string/richanliang_midu"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--&lt;!&ndash; 第4行 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--&lt;!&ndash; 长  &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtRichanliangChang"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.15"-->
+                <!--android:text="@string/richanliang_chang" />-->
+
+
+
+            <!--&lt;!&ndash; 宽  &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtRichanliangKuan"-->
+                <!--android:text="@string/richanliang_kuan"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.15" />-->
+
+
+            <!--&lt;!&ndash; 厚  &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txtRichanliangHou"-->
+                <!--android:text="@string/richanliang_hou"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.15" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.shtoone.shtw.ui.PageStateLayout
+            android:id="@+id/psl_concrete_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:emptyView="@layout/page_state_empty_view"
+            app:errorView="@layout/page_state_error_view"
+            app:loadingView="@layout/page_state_loading_view"
+            app:netErrorView="@layout/page_state_net_error_view">
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/map_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.shtoone.shtw.ui.PageStateLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/ms_select_equipment_dialog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="true"
+                app:ms_arrowColor="@color/black"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/black"
+                app:ms_enableErrorLabel="false"
+                app:ms_floatingLabelColor="@color/black"
+                app:ms_floatingLabelText="@string/select_equipment"
+                app:ms_highlightColor="@color/white"
+                app:ms_hint="@string/select_equipment"
+                app:ms_hintColor="@color/black"
+                app:ms_multiline="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

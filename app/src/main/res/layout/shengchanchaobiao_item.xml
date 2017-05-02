@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">"
+
+    <!-- 日期  -->
+    <TextView
+        android:id="@+id/txtZongchanliangWCDate"
+        style="@style/Font12Orange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25" />
+
+    <!-- 低报警 -->
+    <TextView
+        android:id="@+id/txtZongchanliangDibaojing"
+        style="@style/Title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25" />
+
+    <!-- 中报警 -->
+    <TextView
+        android:id="@+id/txtZongchanliangZhongbaojing"
+        style="@style/Title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25" />
+
+    <!-- 高报警 -->
+    <TextView
+        android:id="@+id/txtZongchanliangGaobaojing"
+        style="@style/Title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25" />
+
+</LinearLayout>

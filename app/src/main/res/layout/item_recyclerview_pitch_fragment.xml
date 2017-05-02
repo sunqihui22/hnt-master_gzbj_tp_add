@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_recyclerview_concrete_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="@dimen/card_Corner_Radius"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:id="@+id/chaobiaotongji_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <!-- 顶部图形标题，数据所属组织机构 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+
+            <TextView
+                android:id="@+id/tv_organization_item_recyclerview_pitch_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="监理公司"
+                android:textColor="@color/primary_text_default_material_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <!-- 右边显示拌合站数量 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_site_count_item_recyclerview_pitch_fragment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/design_blue_point"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="站"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_machine_count_item_recyclerview_pitch_fragment"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/design_blue_point"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="机"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@color/white_70_percent_alpha"
+            android:orientation="horizontal">
+            <!-- 总产量,查询按钮 -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总产量:"
+                    android:textColor="@color/mdtp_dark_gray"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/chaobiaotongji_chanliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总盘数:"
+                    android:textColor="@color/mdtp_dark_gray"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/chaobiaotongji_panshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30sp"
+                    android:layout_weight="3"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text_default_material_light" />
+
+        <!-- 超标级别,等级,超标盘数,超标率,处置率 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="标段" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="等级" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="超标盘数" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="超标率" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="处置率" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <!-- 列表 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaoyujin0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:singleLine="true"
+                android:text="超标预警"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaodengji0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="总正"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaopanshu0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaolv0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="2.3%"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/chaobiao_chuzhilv0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="80%"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaoyujin1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:singleLine="true"
+                android:text="超标预警"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaodengji1"
+                android:textColor="@color/orange"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="总正" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaopanshu1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaolv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="2.3%"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/chaobiao_chuzhilv1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="80%"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaoyujin2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:singleLine="true"
+                android:text="超标预警"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaodengji2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="总正"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaopanshu2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaolv2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="2.3%"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/chaobiao_chuzhilv2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="80%"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaoyujin3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:singleLine="true"
+                android:text="超标预警"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaodengji3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="总正"
+                android:gravity="center"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaopanshu3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/chaobiao_chaobiaolv3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="2.3%"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/chaobiao_chuzhilv3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:text="80%"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
