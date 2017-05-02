@@ -23,12 +23,11 @@ public class AboutActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
         initView();
         initDate();
     }
 
-    //初始化
+    //初始化111
     private void initView() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar_toolbar_tablayout);
         mTabLayout = (TabLayout) findViewById(R.id.tablayout_toolbar_tablayout);
